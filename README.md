@@ -1,4 +1,9 @@
-# Project with nodejs and mongodb
+<p align="center">
+  <a href="https://github.com/thiiagoms/node-mongodb">
+    <img src="assets/logo.png" alt="Logo" width="80" height="80">
+  </a>
+     <h3 align="center">Book API with NodeJs, Express and Mongodb :four_leaf_clover: :books:</h3>
+</p>
 
 ## Install
 
@@ -13,6 +18,18 @@ $ git clone https://github.com/thiiagoms/node-express-mongodb
 ```bash
 $ cd node-express-mongodb
 $ npm install
+```
+
+- Third, create `.env` and add your Mongo credentials in `.env` file:
+
+```bash
+$ cp .env.example .env
+$ cat .env
+
+DATABASE_HOST=<your-mongo-host-here>
+DATABASE_NAME=<your-mongo-dbname-here>
+DATABASE_USER=<your-mongo-dbuser-here>
+DATABASE_PASS=<your-mongo-dbass-here>
 ```
 
 ## Run
