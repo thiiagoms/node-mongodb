@@ -1,9 +1,9 @@
-import express from "express";
-import db from "./config/database.mjs";
-import router from "./routes/routes.js";
+import express from 'express';
+import db from './config/database.mjs';
+import router from './routes/routes.js';
 
-db.on("error", console.log.bind(console, "Database connection error"));
-db.once("open", () => console.log("[*] Database connected!!"));
+db.on('error', console.log.bind(console, 'Database connection error'));
+db.once('open', () => console.log('[*] Database connected!!'));
 
 const app = express();
 
