@@ -1,4 +1,4 @@
-import app from "./src/app.mjs";
+import app from './src/app.mjs';
 
 const port = process.env.PORT || 3000;
 

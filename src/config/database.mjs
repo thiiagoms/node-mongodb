@@ -1,15 +1,15 @@
-import mongoose from "mongoose";
-import "dotenv/config";
+import mongoose from 'mongoose';
+import 'dotenv/config';
 
-let dbHost = process.env.DATABASE_HOST;
-let dbName = process.env.DATABASE_NAME;
-let dbUser = process.env.DATABASE_USER;
-let dbPass = process.env.DATABASE_PASS;
+const dbHost = process.env.DATABASE_HOST;
+const dbName = process.env.DATABASE_NAME;
+const dbUser = process.env.DATABASE_USER;
+const dbPass = process.env.DATABASE_PASS;
 
 mongoose.connect(
   `mongodb+srv://${dbUser}:${dbPass}@${dbHost}.0wiax.mongodb.net/${dbName}`
 );
 
-let db = mongoose.connection;
+const db = mongoose.connection;
 
 export default db;
